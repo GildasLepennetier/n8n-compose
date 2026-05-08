@@ -95,6 +95,15 @@ systemctl start apache2
 a2enmod proxy proxy_http proxy_wstunnel ssl headers rewrite
 ```
 
+### harden apache
+
+Edit `/etc/apache2/conf-enabled/security.conf` and set:
+
+```apache
+ServerTokens Prod      # hide Apache version in HTTP headers (default: OS)
+ServerSignature Off    # hide Apache version in error pages (default: On)
+```
+
 ### step 1: create HTTP vhost (pre-certbot)
 
 Do not forget to update the placeholders.

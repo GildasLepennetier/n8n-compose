@@ -21,8 +21,7 @@ services:
     image: ollama/ollama:latest
     pull_policy: always
     container_name: ollama
-    ports:
-      - "11434:11434"
+    # no ports exposed — only accessible via Docker network (http://ollama:11434)
     volumes:
       - ollama_data:/root/.ollama
     restart: unless-stopped
