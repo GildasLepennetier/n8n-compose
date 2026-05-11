@@ -16,3 +16,8 @@ Docker Compose setup for [n8n](https://n8n.io/) with optional [Ollama](https://o
 ## ⚠️ Important
 
 The Apache HTTPS config **must** include WebSocket rewrite rules, see step 7.3 in `setup.md`.
+
+
+## possible development
+
+apache2 / nginx into docker
