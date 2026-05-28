@@ -16,4 +16,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  n8n_data:
+  n8n_data: # docker volume inspect n8n_data
