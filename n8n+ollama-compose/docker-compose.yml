@@ -8,6 +8,9 @@ services:
       - "5678:5678"
     environment:
       N8N_HOST: <YOUR_DOMAIN>
+      N8N_PROTOCOL: https
+      N8N_PORT: 5678
+      N8N_EDITOR_BASE_URL: https://<YOUR_DOMAIN>
       WEBHOOK_URL: https://<YOUR_DOMAIN>
       GENERIC_TIMEZONE: Europe/Berlin
       TZ: Europe/Berlin
